@@ -54,7 +54,7 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
 
 .close {
   display: none;
-  animation: show 0.2s ease-out 0 1;
+  animation: show 0.3s ease-out 0 1;
 
 }
 
