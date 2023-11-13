@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'TheJamsil5Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,99 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.font1 {
+  font-family: 'TheJamsil5Bold';
+  font-size: 60px;
+}
+
+.font2 {
+  font-family: 'TheJamsil5Bold';
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.bg {
+  background: rgb(164,79,223);
+background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%, rgba(226,105,98,1) 100%);
+}
+
+
+
+.show {
+  display: flex;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.close {
+  display: none;
+  animation: show 0.2s ease-out 0 1;
+
+}
+
+.profileImg { 
+  width: 60px;
+  margin-bottom: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.profileImg > img {
+  width: 100%;
+}
+
+.profileName {
+  margin: 6px 0;
+  color: white;
+}
+
+.input {
+  border-radius: 0.25em;
+  background-color: black;
+  border: 1px solid white;
+  margin: 1px;
+  color: white;
+}
+
+.button {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: black;
+  border: 0;
+  margin-right: 5px;
+}
+
+.hidBtn {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+}
+
+.pwInputWrapper {
+  position: relative;
 }
