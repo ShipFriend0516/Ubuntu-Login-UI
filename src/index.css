@@ -49,12 +49,17 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
 
   100% {
     opacity: 0;
+
   }
 }
 
 .close {
-  display: none;
-  animation: show 0.3s ease-out 0 1;
+  /* display: flex; */
+  z-index: 2;
+  animation-name: show;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 
 }
 
@@ -83,6 +88,8 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
   border: 1px solid white;
   margin: 1px;
   color: white;
+  z-index: 0;
+
 }
 
 .button {
@@ -91,6 +98,7 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
   background-color: black;
   border: 0;
   margin-right: 5px;
+
 }
 
 .hidBtn {
@@ -105,4 +113,5 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
 
 .pwInputWrapper {
   position: relative;
+  z-index: 0;
 }
