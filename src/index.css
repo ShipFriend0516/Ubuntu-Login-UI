@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+:root {
+  --fadeout-time: .3s;
+}
+
 @font-face {
   font-family: 'TheJamsil5Bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
@@ -32,8 +36,8 @@ code {
 }
 
 .bg {
-  background: rgb(164,79,223);
-background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%, rgba(226,105,98,1) 100%);
+  background: rgb(131,58,180);
+  background: linear-gradient(144deg, rgba(131,58,180,1) 0%, rgba(79,29,253,1) 50%, rgba(193,69,252,1) 100%);
 }
 
 
@@ -58,7 +62,7 @@ background: linear-gradient(90deg, rgba(164,79,223,1) 0%, rgba(135,98,226,1) 50%
   z-index: 2;
   animation-name: show;
   animation-iteration-count: 1;
-  animation-duration: 0.5s;
+  animation-duration: var(--fadeout-time);
   animation-timing-function: ease-in-out;
 
 }

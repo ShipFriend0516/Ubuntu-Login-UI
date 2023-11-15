@@ -39,9 +39,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const TRANSITION = 0.5 * 1000;
+    const TRANSITION_SECONDS = 0.3;
+    const TRANSITION = TRANSITION_SECONDS * 1000;
     const element = document.getElementById("cover"); // 요소를 선택
-    if (!isLoading) {
+    if (!isLoading && element) {
       const handleAnimationEnd = () => {
         element.classList.add("close");
         setTimeout(() => {
@@ -93,7 +94,7 @@ function App() {
               <div className="profileImg">
                 <img src={profileImg} alt="profileImg" />
               </div>
-              <div className="profileName">Oracion</div>
+              <div className="profileName">Wak</div>
               <div className="pwInputWrapper">
                 <button
                   className="button"
